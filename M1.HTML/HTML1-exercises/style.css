@@ -32,3 +32,8 @@ h6 {
 p {
     background: orange;
 }
+
+div {
+    background: yellow;
+    color: blue;
+}
