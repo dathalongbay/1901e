@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="normalize.css" />
+
+    <style type="text/css">
+
+        ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            background: #CCCCCC;
+        }
+        .main-menu {
+
+
+        }
+        ul.main-menu > li {
+            float: left;
+            padding: 10px;
+            background: orange;
+            position: relative;
+        }
+
+        ul.main-menu > li > a {
+            color: white;
+            text-decoration: none;
+        }
+
+        ul.main-menu > li:hover ul.sub-menu {
+            display: block;
+        }
+
+        ul.sub-menu {
+            position: absolute;
+            top: 38px;
+            left: 10px;
+            display: none;
+            width: 300px;
+        }
+
+        ul.sub-menu > li {
+            padding: 10px;
+            background: orange;
+
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <nav>
+                <ul class="main-menu">
+                    <li>
+                        <a href="#">Thời sự</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">Chính trị</a></li>
+                            <li><a href="#">Giao thông</a></li>
+                            <li><a href="#">Đô thị</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Pháp luật</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">Pháp đình</a></li>
+                            <li><a href="#">Vụ án</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Thế giới</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">Quân sự</a></li>
+                            <li><a href="#">Tư liệu</a></li>
+                            <li><a href="#">Phân tích</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Kinh doanh</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">Bất động sản</a></li>
+                            <li><a href="#">Hàng không</a></li>
+                            <li><a href="#">Tài chính</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+</body>
+</html>
