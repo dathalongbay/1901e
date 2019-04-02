@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="normalize.css">
+    <style type="text/css">
+        #target1 {
+            background: green;
+            color: white;
+            width: 50%;
+            padding: 20px;
+            position: absolute;
+            top: 50px;
+            left: 0;
+        }
+
+        #target2 {
+            background: green;
+            color: white;
+            width: 200px;
+            padding: 20px;
+            position: absolute;
+            top: 150px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        #target3 {
+            background: green;
+            color: white;
+            width: 50%;
+            padding: 20px;
+            position: absolute;
+            top: 250px;
+            right: 0;
+        }
+
+        #parent1 , #parent2 , #parent3 {
+            width: 70%;
+            margin: 400px;
+            background: green;
+            color: white;
+            padding: 30px;
+            position: relative;
+            height: 300px;
+        }
+
+        #child1 , #child2 , #child3 {
+            background: orange;
+            padding: 30px;
+            width: 300px;
+            position: absolute;
+        }
+
+        #child1 {
+            top: 0;
+            left: 0;
+        }
+
+        #child2 {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        #child3 {
+           bottom: 0;
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="target1">
+        Thẻ block nằm trực tiếp trong thẻ body căn trái
+    </div>
+
+    <div id="target2">
+        Thẻ block nằm trực tiếp trong thẻ body căn giữa
+    </div>
+
+    <div id="target3">
+        Thẻ block nằm trực tiếp trong thẻ body căn phải
+    </div>
+
+    <div id="parent1">
+        <div id="child1">
+            Thẻ block nằm trong 1 khối khác căn trái
+        </div>
+    </div>
+
+    <div id="parent2">
+        <div id="child2">
+            Thẻ block nằm trong 1 khối khác căn giữa theo chiều dọc và chiều ngang
+        </div>
+    </div>
+
+    <div id="parent3">
+        <div id="child3">
+            Thẻ block nằm trong 1 khối khác căn phải
+        </div>
+    </div>
+
+</body>
+</html>
