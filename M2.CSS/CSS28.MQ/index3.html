@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="normalize.css">
+
+    <style type="text/css">
+
+        .container {
+            background: greenyellow;
+            overflow: auto;
+        }
+
+        .container .sidebar {
+            float: left;
+            background: orange;
+            color: white;
+            width: 30%;
+        }
+
+        .container .main {
+            float: right;
+            width: 70%;
+            background: green;
+            color: white;
+        }
+
+        @media screen and (max-width: 700px) {
+            /* CSS MOBILE từ 700px */
+            .container .sidebar {
+                float: none;
+                width: 100%;
+            }
+
+            .container .main {
+                float: none;
+                width: 100%;
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="">Menu 1</a> </li>
+                    <li><a href="">Menu 2</a> </li>
+                    <li><a href="">Menu 3</a> </li>
+                    <li><a href="">Menu 4</a> </li>
+                    <li><a href="">Menu 5</a> </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="main">
+            Examples: You could have one set of style rules for computer screens,
+            one for printers, one for handheld devices, one for television-type devices, and so on.
+        </div>
+    </div>
+
+</body>
+</html>
