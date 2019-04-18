@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Thay đổi giá trị thuộc tính src của hình ảnh</h1>
+
+    <div style="margin: 20px">
+        <img id="target" src="images/pic_bulboff.gif">
+    </div>
+
+    <div style="margin: 20px">
+        <button onclick="document.getElementById('target').src = 'images/pic_bulbon.gif';">Bật bóng đèn</button>
+        <button onclick="document.getElementById('target').src = 'images/pic_bulboff.gif';">Tắt bóng đèn</button>
+    </div>
+
+    <p>getElementById('target').src : gọi đến thuộc tính src của selector</p>
+
+    <script type="text/javascript">
+        //document.getElementById('target').src = 'images/pic_bulboff.gif';
+        //document.getElementById('target').src = 'images/pic_bulbon.gif';
+    </script>
+</body>
+</html>
