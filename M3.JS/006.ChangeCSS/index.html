@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <h1>Thay đổi css bằng js</h1>
+
+    <div id="target" style="font-size: 18px">
+        Changing the style of an HTML element, is a variant of changing an HTML attribute:
+    </div>
+
+    <div style="margin: 30px">
+        <button onclick="var current_font_size = parseInt(document.getElementById('target').style.fontSize);current_font_size = current_font_size + 2;var current_font_size_text = current_font_size + 'px'; document.getElementById('target').style.fontSize = current_font_size_text;">Tăng font</button>
+        <button onclick="var current_font_size = parseInt(document.getElementById('target').style.fontSize);current_font_size = current_font_size - 2;var current_font_size_text = current_font_size + 'px'; document.getElementById('target').style.fontSize = current_font_size_text;">Giảm font</button>
+    </div>
+
+
+    <div>
+        <p style="color: red">document.getElementById('target').style.fontSize => lấy font size của id target ( 18px ) => parseInt(18px) => 18</p>
+        <br>var current_font_size = parseInt(document.getElementById('target').style.fontSize);
+        <p style="color: red">18 + 2 = 20</p>
+        <br>current_font_size = current_font_size + 2;
+        <p style="color: red">20 + 'px' = '20px'</p>
+        <br>var current_font_size_text = current_font_size + 'px';
+        <p style="color: red">gán ngược lại font size cho id target 22px => id target</p>
+        <br>document.getElementById('target').style.fontSize = current_font_size_text;
+    </div>
+    <script type="text/javascript">
+
+        // Lấy giá trị của font size hiện tại
+        //var current_font_size = parseInt(document.getElementById('target').style.fontSize);current_font_size = current_font_size + 2;var current_font_size_text = current_font_size + 'px'; document.getElementById('target').style.fontSize = current_font_size_text;
+    </script>
+
+</body>
+</html>
