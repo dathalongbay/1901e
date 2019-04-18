@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+
+    <div class="container" style="margin-top: 50px">
+        <div class="row">
+            <div class="col-md-12">
+                    <div class="form-group">
+                        <label>Biến 1</label>
+                        <input type="text" id="in1" name="input1" class="form-control" value="" style="max-width: 400px">
+                    </div>
+                    <div class="form-group">
+                        <label>Biến 2</label>
+                        <input type="text" id="in2" name="input2" class="form-control" value="" style="max-width: 400px">
+                    </div>
+                    <div class="form-group">
+                        <label id="result">Kết quả : </label>
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-success" onclick="var in1 = parseInt(document.getElementById('in1').value);var in2 = parseInt(document.getElementById('in2').value);var res = in1+in2;document.getElementById('result').innerHTML = 'Kết quả :' + res;">Cộng</button>
+                        <button class="btn btn-success" onclick="var in1 = parseInt(document.getElementById('in1').value);var in2 = parseInt(document.getElementById('in2').value);var res = in1-in2;document.getElementById('result').innerHTML = 'Kết quả :' + res;">Trừ</button>
+                        <button class="btn btn-success" onclick="var in1 = parseInt(document.getElementById('in1').value);var in2 = parseInt(document.getElementById('in2').value);var res = in1*in2;document.getElementById('result').innerHTML = 'Kết quả :' + res;">Nhân</button>
+                        <button class="btn btn-success" onclick="var in1 = parseInt(document.getElementById('in1').value);var in2 = parseInt(document.getElementById('in2').value);var res = in1/in2;document.getElementById('result').innerHTML = 'Kết quả :' + res;">Chia</button>
+                    </div>
+            </div>
+        </div>
+
+        <h1>Chú ý :</h1>
+        <ol>
+            <li>parseInt() : ép giá trị về 1 số ví dụ ép kiểu 'abc' => 0</li>
+            <li>document.getElementById('in1').value : .value sẽ lấy giá trị trong ô input</li>
+        </ol>
+
+        <script type="text/javascript">
+
+
+           /* var in1 = parseInt(document.getElementById('in1').value);
+            var in2 = parseInt(document.getElementById('in2').value);
+            var res = in1+in2;
+            document.getElementById('result').innerHTML = 'Kết quả :' + res;*/
+
+
+           /*var in1 = parseInt(document.getElementById('in1').value);
+           var in2 = parseInt(document.getElementById('in2').value);
+           var res = in1-in2;
+           document.getElementById('result').innerHTML = 'Kết quả :' + res;*/
+
+
+
+        </script>
+    </div>
+
+</body>
+</html>
