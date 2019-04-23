@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1 id="e1">Độ dài của chuỗi trong js (.length) đo độ dài của chuỗi ký tự</h1>
+
+<h1 id="e2"></h1>
+
+
+<script type="text/javascript">
+    var str = document.getElementById('e1').innerHTML;
+    console.log(str.length);
+
+    // In ra 1 chuỗi Hello "Javascript"
+    // Cách escape
+
+    // TH1 Sử dụng nháy đơn bao nháy kép
+    //document.getElementById('e2').innerHTML = 'Hello "Javascript"';
+
+    // TH2 buộc phải dùng nháy kép dùng escape character \ ( dấu xược ngược )
+    document.getElementById('e2').innerHTML = "Hello \"Javascript\"";
+</script>
+</body>
+</html>
