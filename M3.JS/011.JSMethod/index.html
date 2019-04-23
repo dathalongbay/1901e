@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1>Các phương thức xử lý chuỗi trong js</h1>
+
+<script type="text/javascript">
+    var str1 = "Hello javascript php nodejs";
+    var pos1 = str1.indexOf('php');
+
+    // sử dụng phương thức indexOf('sub_string') để tìm vị trí chuỗi con xuất hiện trong chuỗi mẹ
+    // indexOf đếm từ 0
+    console.log('Vị trí chuỗi php xuất hiện trong chuỗi str1 là : ' + pos1);
+
+    var str2 = "Hello javascript php nodejs php java php";
+    var pos2 = str2.lastIndexOf('php');
+    console.log('Vị trí chuỗi php xuất hiện lần cuối trong chuỗi str2 là : ' + pos2);
+
+
+    // trích xuất 1 chuỗi nhỏ từ 1 chuỗi lớn
+    // lấy tên của 1 người str3.slice(vị trí bắt đầu,vị trí kết thúc)
+    var str3 = "nguyễn tuấn anh";
+    var str4 = str3.slice(12,15);
+    console.log(str4);
+
+    // substr(ví trí bắt đây, độ dài của chuỗi muốn cắt)
+    var str5 = "nguyễn tuấn anh";
+    var str6 = str5.substr(12, 3);
+    console.log(str6);
+
+
+
+</script>
+
+</body>
+</html>
