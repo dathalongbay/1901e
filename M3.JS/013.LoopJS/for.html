@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <h1>Vòng lặp là chu trình lặp đi lặp lại . có điểm bắt đầu . điểm kết thúc . sự thay đổi trong mỗi
+    lần lặp</h1>
+
+    <h1>Vòng lặp for(khởi_đầu;điều_kiện_dừng;sự_thay_đổi_mỗi_lần_lặp)</h1>
+
+    <div>
+        <pre>
+        var tuoi = 0;
+        for(tuoi = 0;tuoi<100;tuoi++) {
+
+        }
+        </pre>
+    </div>
+
+    <div>
+        <table style="width: 100%; background: green; color: tomato">
+            <thead>
+                <tr>
+                    <td>STT</td>
+                    <td>Ten</td>
+                    <td>Dien tich</td>
+                </tr>
+            </thead>
+            <tbody id="content">
+                <tr>
+                    <td>1</td>
+                    <td>ha noi</td>
+                    <td>100</td>
+                </tr>
+
+            </tbody>
+        </table>
+        <div>
+            <button onclick="generateProvince()">Tạo data</button>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        for(var i = 0;i <= 10;i++){
+            console.log(i);
+        }
+
+        function generateProvince() {
+            var html = '';
+
+            // khởi tạo đối tượng
+            var hanoi = {id:1, name:'ha noi', s:100};
+            var hcm = {id:2, name:'ho chi minh', s:100};
+
+            // binh duong , ca mau , long an , vinh long , can tho
+            var province = [hanoi, hcm];
+
+            /**
+             * cách viết rút gọn
+             * html = html + 'abc'; => html += 'abc';
+             *
+             */
+
+            for(var i = 0;i < province.length;i++){
+                console.log(i);
+                html += '<tr>';
+                html += '<td>' + province[i].id + '</td>';
+                html += '<td>' + province[i].name + '</td>';
+                html += '<td>' + province[i].s + '</td>';
+                html += '</tr>';
+            }
+
+
+            document.getElementById('content').innerHTML = html;
+        }
+    </script>
+
+
+</body>
+</html>
