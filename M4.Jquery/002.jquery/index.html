@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style type="text/css">
+        td {
+            border: 3px solid red;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Jquery là thư viện của js. Cho phép mình làm việc với js đơn giản và dễ dàng hơn.</h1>
+
+    <h1>JS còn angularjs , backbonejs, knockout js, coffee script ...</h1>
+
+    <h1>Bộ chọn ( selector ) trong jquery == bộ chọn ( selector ) css</h1>
+
+    <table style="width: 100%;color: red; border: 3px solid red; padding: 15px">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>CSS</th>
+                <th>JQuery</th>
+                <th>Chú thích</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>h1</td>
+                <td>$('h1')</td>
+                <td>selector tên thẻ</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>#id</td>
+                <td>$('#id')</td>
+                <td>selector id</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>.class</td>
+                <td>$('.class')</td>
+                <td>selector class</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>.classA .classB</td>
+                <td>$('.classA .classB')</td>
+                <td>selector class lồng class</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>.classA > .classB</td>
+                <td>$('.classA > .classB')</td>
+                <td>selector con trực tiếp</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <pre style="font-size: 30px">
+        B1 => $(document).ready(); // khi mà trang html tải xong toàn bộ thẻ html và ảnh ... các tài
+        nguyeen của trang html thì sẽ thực hiện nhưng lệnh trong document ready
+        B2 => function() {} // tạo ra 1 function không có tên
+        B3 => viết code cho hàm không có tên này
+
+        $(document).ready(function(){
+            // code thực thi trong document ready
+            alert('trang đã tải thành công');
+        });
+    </pre>
+
+</body>
+</html>
