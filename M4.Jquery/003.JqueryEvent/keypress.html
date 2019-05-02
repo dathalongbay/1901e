@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Keypress nhấn phím</h1>
+
+<form name="login" action="" method="post">
+
+    <div>
+        <label>Username</label>
+        <input type="text" name="username" value="">
+    </div>
+    <p style="color: red"></p>
+</form>
+
+<script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+       $("input[name='username']").keypress(function () {
+           var text = $(this).val();
+           var text_length = text.length;
+           $("p").text("Bạn đã nhập :" + text_length + " ký tự");
+       });
+
+    });
+</script>
+
+</body>
+</html>
