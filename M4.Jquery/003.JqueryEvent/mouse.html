@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1>mouseleave và mouseenter</h1>
+
+<div id="target">
+    Nội dung thẻ div
+</div>
+<p>mouseenter là di chuột vào</p>
+<p>mouseleave là di chuột ra</p>
+
+<script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+<script type="text/javascript">
+
+    $(document).ready(function() {
+
+        // function() {} == callback
+        $("#target").mouseenter(function() {
+            // this == #target
+            $(this).css("background","green");
+        });
+
+        $("#target").mouseleave(function () {
+            $(this).css("background", "#FFF");
+        });
+
+    });
+</script>
+
+
+</body>
+</html>
