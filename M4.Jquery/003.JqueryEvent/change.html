@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Sự kiện change kích hoạt khi mà thay đổi nội dung của input và bỏ chuột ra ngoài ô input</h1>
+
+<form name="login" action="" method="post">
+
+    <div>
+        <label>Để lại lời nhắn tối đa 255 ký tự</label>
+        <textarea name="note" style="width: 500px; height: 100px"></textarea>
+    </div>
+    <p style="color: red"></p>
+</form>
+
+<script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+       $("textarea[name='note']").change(function () {
+           var text = $(this).val();
+           var text_length = 255 - text.length;
+           $("p").text("Bạn còn được nhập :" + text_length + " ký tự");
+       });
+
+    });
+</script>
+
+</body>
+</html>
