@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Sự kiện focus để con trỏ chuột vào 1 ô input</h1>
+
+<form name="login" action="" method="post">
+
+    <div>
+        <label>Username</label>
+        <input type="text" name="username" value="">
+    </div>
+
+    <div>
+        <label>Nơi ở</label>
+        <input type="text" name="location" value="">
+    </div>
+
+</form>
+
+<script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+       $("input").focus(function () {
+           $(this).css("border", "1px solid red");
+       });
+
+    });
+</script>
+
+</body>
+</html>
