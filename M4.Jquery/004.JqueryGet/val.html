@@ -5,6 +5,29 @@
     <title>Title</title>
 </head>
 <body>
+<h1> phương thức val() lấy nội dung bên trong thẻ input hay textarea</h1>
+<form name="login" action="" method="post">
+    <div>
+        <label>Nhập họ tên</label>
+        <input name="hoten" value="" type="text">
+    </div>
+</form>
+
+<button id="target">RUN</button>
+<script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+
+    $(document).ready(function() {
+        $("#target").on("click", function () {
+            var txt = $("input[name='hoten']").val();
+            alert('chào ' + txt);
+        });
+    });
+</script>
 
 </body>
 </html>
